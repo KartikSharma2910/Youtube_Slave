@@ -1,18 +1,20 @@
+import { Home, SignIn, Watch } from "../components/features";
+
 export const routes = {
   defaultRoutes: [
     {
       path: "/",
-      element: "Home",
+      element: Home,
     },
     {
       path: "/watch/:id",
-      element: "Watch",
+      element: Watch,
     },
   ],
   privateRoutes: [
     {
       path: "/sign-in",
-      element: "Sign In",
+      element: SignIn,
     },
   ],
 };

@@ -6,8 +6,8 @@ import PrivateRoute from "./PrivateRoute";
 const AppRouter = () => {
   return (
     <Routes>
-      {privateRoutes.map(({ path, element }, index) => {
-        return <Route key={index} path={path} element={element} />;
+      {privateRoutes.map(({ path, element: Element }, index) => {
+        return <Route key={index} path={path} element={<Element />} />;
       })}
 
       {defaultRoutes.map(({ path, element: Element }, index) => {
